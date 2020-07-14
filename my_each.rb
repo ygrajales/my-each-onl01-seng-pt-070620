@@ -1,3 +1,13 @@
-def my_each # put argument(s) here
-  # code here
+def my_each(list)
+  
+  counter = 0 
+  
+  while counter < list.length
+    yield (list[counter])
+    counter += 1 
+  end
+  
+  list
+  
 end
+ 
